@@ -14,6 +14,9 @@
 </h4>
 </p>
 
+# MY GROUP CHAT↓
+[Gura Bot User](https://chat.whatsapp.com/HtupgW2zN9C6aNzktp3bX9)
+
 ## CARA INSTALL DI TERMUX
 ```bash
 > Ada Di Tutorial
@@ -32,7 +35,7 @@
 * [FFmpeg](https://github.com/BtbN/FFmpeg-Builds/releases/download/autobuild-2020-12-08-13-03/ffmpeg-n4.3.1-26-gca55240b8c-win64-gpl-4.3.zip)
 * [Libwebp](https://developers.google.com/speed/webp/download)
 
-  # MAKASIH LORT
+  # Thanks
 * [`Baileys`](https://github.com/adiwajshing/Baileys)
 * [`Depin`](https://github.com/DepinKunn)
   
