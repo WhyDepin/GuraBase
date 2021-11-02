@@ -4,13 +4,10 @@ COMMAND TERMUX
 $ pkg install nodejs git ffmpeg libwebp
 $ apt update
 $ apt upgrade
-$ termux-setup-storage
-$ cd /sdcard
-$ cp -r GuraBase /$HOME
-$ cd
+$ git clone https://github.com/DepinKunn/GuraBase
 $ cd GuraBase
 $ npm i
-$ node main.js
+$ npm start
 
 Note:
 Jika Ada module Yang kurang chat
