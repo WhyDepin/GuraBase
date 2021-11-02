@@ -1,0 +1,17 @@
+TUTORIAL PENGISTALAN GURABOT
+
+COMMAND TERMUX
+$ pkg install nodejs git ffmpeg libwebp
+$ apt update
+$ apt upgrade
+$ termux-setup-storage
+$ cd /sdcard
+$ cp -r GuraBase /$HOME
+$ cd
+$ cd GuraBase
+$ npm i
+$ node main.js
+
+Note:
+Jika Ada module Yang kurang chat
+wa.me/628871746203
