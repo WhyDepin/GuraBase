@@ -36,7 +36,9 @@
 * [Libwebp](https://developers.google.com/speed/webp/download)
 
 ## SETTING
-* [`OWNER`](
+* [`OWNER`](https://github.com/DepinKunn/GuraBase/edit/master/setting.json)
+* [`PREFIX`](https://github.com/DepinKunn/GuraBase/edit/master/setting.json)
+* [`LOLKEY`](https://github.com/DepinKunn/GuraBase/edit/master/setting.json)
 
   # Thanks
 * [`Baileys`](https://github.com/adiwajshing/Baileys)
