@@ -43,6 +43,6 @@
   # Thanks
 * [`Baileys`](https://github.com/adiwajshing/Baileys)
 * [`Depin`](https://github.com/DepinKunn)
-* [`PENYEDIA APIKEY`]
+* `PENYEDIA APIKEY`
   
   
