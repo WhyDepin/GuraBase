@@ -309,7 +309,7 @@ request(uri).pipe(fs.createWriteStream(filename)).on('close', callback);
 download(url, namea, async function () {
 let filess = namea
 let asw = names
-require('../lib/exif.js')
+require('./lib/exif.js')
 exec(`ffmpeg -i ${filess} -vcodec libwebp -filter:v fps=fps=20 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${asw}`, (err) => {
 exec(`webpmux -set exif ./core/stickers/data.exif ${asw} -o ${asw}`, async (error) => {
 let media = fs.readFileSync(asw)
@@ -334,7 +334,7 @@ request(uri).pipe(fs.createWriteStream(filename)).on('close', callback);
 download(url, namea, async function () {
 let filess = namea
 let asw = names
-require('../lib/exif.js')
+require('./lib/exif.js')
 exec(`ffmpeg -i ${filess} -vcodec libwebp -filter:v fps=fps=20 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${asw}`, (err) => {
 exec(`webpmux -set exif ./core/stickers/data.exif ${asw} -o ${asw}`, async (error) => {
 let media = fs.readFileSync(asw)
@@ -805,7 +805,7 @@ yta(yut.videos[0].url)
 const { dl_link, thumb, title, filesizeF, filesize } = res
 axios.get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
 .then((a) => {
-if (Number(filesize) >= 30000) return sendMediaURL(from, thumb, `*P L A YM P 3*\n\n${shp} Title : ${title}\n${shp} Ext : MP3\n${shp} Filesize : ${filesizeF}\n${shp} Upload : ${yut.videos[0].ago}\n${shp} Views : ${yut.videos[0].views}\n${shp} Duration : ${yut.videos[0].timestamp}\n${shp} Link : ${a.data}\n\n_Untuk durasi lebih dari batas disajikan dalam bentuk link_`)
+if (Number(filesize) >= 30000) return sendMediaURL(from, thumb, `*P L A YM P 3*\n\n${mot} Title : ${title}\n${mot} Ext : MP3\n${mot} Filesize : ${filesizeF}\n${mot} Upload : ${yut.videos[0].ago}\n${mot} Views : ${yut.videos[0].views}\n${mot} Duration : ${yut.videos[0].timestamp}\n${mot} Link : ${a.data}\n\n_Untuk durasi lebih dari batas disajikan dalam bentuk link_`)
 
 const captionis = `*P L A YM P 3*\n\n${mot} Title : ${title}\n${mot} Size : ${filesizeF}\n${mot} Views: ${yut.videos[0].views}\n${mot} Duration : ${yut.videos[0].timestamp}\n${mot} URL : ${yut.videos[0].url}\n\n*_Permintaan Anda Sedang Di Prosess!_*`
 //sendMediaURL(from, thumb, captionis)
@@ -889,7 +889,7 @@ case 'bc':
              break
 case 'sc':
 case 'sourcecode':
-reply('Base Coming On 4th Nov')
+reply(`bot ini menggunakan :\nhttps://github.com/finxdev/GuraBase`)
 break
 
 case 'antilink':
