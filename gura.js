@@ -1110,28 +1110,20 @@ fs.unlinkSync(`./stickers/takestick_${sender}.exif`)
 reply(`Format Error!*\n\n*Example :*\n*_Reply gambar/video dengan Caption ${prefix + command} Nama|Author_`)
 }
 break 
-    case 'toimg':
-			if (!isQuotedSticker) return reply('𝗥𝗲𝗽𝗹𝘆/𝘁𝗮𝗴 𝘀𝘁𝗶𝗰𝗸𝗲𝗿 !')
-			reply(mess.wait)
-			encmedia = JSON.parse(JSON.stringify(dep).replace('quotedM','m')).message.extendedTextMessage.contextInfo
-			media = await gura.downloadAndSaveMediaMessage(encmedia)
-			ran = getRandom('.png')
-			exec(`ffmpeg -i ${media} ${ran}`, (err) => {
-			fs.unlinkSync(media)
-			if (err) return reply('Yah gagal, coba ulangi ^_^')
-			buffer = fs.readFileSync(ran)
-			fakethumb(buffer,'NIH')
-			fs.unlinkSync(ran)
-			})
-			break
-/*case 'ssweb':
-case 'ss':
-             if (args.length == 0) return reply(`Example: ${prefix + command} https://nekopoi.care/`)
-             if (!q) return reply('Apa Yang Mau di ss?')
-             reply(mess.wait)
-             ini_buffer = await getBuffer(`https://api.lolhuman.xyz/api/ssweb?apikey=${lolkey}&url=${q}`)
-             await sendMediaURL(from, ini_buffer, image, { quoted: fakevo })
-             break*/
+    case 'toimage': case 'toimg':
+if (!isQuotedSticker) return reply('❎ reply stickernya um ❎')
+reply(monospace(mess.wait))
+encmedia = JSON.parse(JSON.stringify(dep).replace('quotedM','m')).message.extendedTextMessage.contextInfo
+media = await gura.downloadAndSaveMediaMessage(encmedia)
+ran = getRandom('.png')
+exec(`ffmpeg -i ${media} ${ran}`, async(err) => {
+fs.unlinkSync(media)
+if (err) return reply('Convert tidak suport stickergif..')
+bup = fs.readFileSync(ran)
+gura.sendMessage(from,bup,image,{quoted:fakevo})
+fs.unlinkSync(ran)
+})
+break
              case 'tourl':
               if ((isMedia && !dep.message.videoMessage || isQuotedImage || isQuotedVideo ) && args.length == 0) {
               reply(mess.wait)
