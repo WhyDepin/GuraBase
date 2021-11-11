@@ -90,7 +90,7 @@ const wib = moment.tz('Asia/Jakarta').format('HH : mm : ss')
 const wita = moment.tz('Asia/Makassar').format('HH : mm : ss')
 const wit = moment.tz('Asia/Jayapura').format('HH : mm : ss')
 
-const getCmd = (id) => {
+const getcmd = (id) => {
   let position = null;
   Object.keys(_scommand).forEach((i) => {
     if (_scommand[i].id === id) {
