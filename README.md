@@ -14,9 +14,6 @@
 </h4>
 </p>
 
-# MY GROUP CHAT↓
-[Gura Bot User](https://chat.whatsapp.com/HtupgW2zN9C6aNzktp3bX9)
-
 ## CARA INSTALL DI TERMUX
 ```bash
 > Ada Di Tutorial
